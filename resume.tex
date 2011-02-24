@@ -1,0 +1,43 @@
+% Sam's Kaplan's resume, as of Feb 24 2011
+% Template taken from:
+% http://www.cv-templates.info/2009/03/professional-cv-latex/
+
+\documentclass[a4paper,10pt]{article}
+
+% A few useful packages
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{url,parskip}
+\usepackage{xunicode,xltxtra}
+
+% Graphics - Colors
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+% Better formatting of the A4 page
+% \usepackage[big]{layaureo}
+% An alternative to Layaureo can be usepackage{fullpage}
+\usepackage{fullpage}
+
+\usepackage{supertabular}
+\usepackage{titlesec}
+
+% Setup hyperref package, and colors for links
+\usepackage{hyperref}
+\definecolor{linkcolor}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks, breaklinks, urlcolor=linkcolor, linkcolor=linkcolor}
+
+% Fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+
+% CV Sections inspired by:
+% http://stefano.italians.nl/archives/26
+% Removes numbers from section headings, uses Large size, uses small caps font,
+% and adds an hrule after heading
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\begin{document}
+\pagestyle{empty}  % don't use page numbers
+
+\end{document}
