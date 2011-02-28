@@ -1,54 +1,38 @@
 % Sam's Kaplan's resume, as of Feb 24 2011
-% Template taken from:
-% http://www.cv-templates.info/2009/03/professional-cv-latex/
 
-\documentclass[a4paper,10pt]{article}
-
-% A few useful packages
-\usepackage{marvosym}
+\documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
-\usepackage{url,parskip}
-\usepackage{xunicode,xltxtra}
+\moderncvtheme[]{classic}
 
-% Graphics - Colors
-\RequirePackage{color,graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-% Better formatting of the A4 page
-% \usepackage[big]{layaureo}
-% An alternative to Layaureo can be usepackage{fullpage}
-\usepackage{fullpage}
+\firstname{Sam}
+\familyname{Kaplan}
+\address{104 E. Jefferson St.}{Media, PA 19063}
+\mobile{(484) 437-2799}
+\email{stkaplan@gmail.com}
 
-\usepackage{supertabular}
-\usepackage{titlesec}
+\nopagenumbers{}
 
-% Setup hyperref package, and colors for links
-\usepackage{hyperref}
-\definecolor{linkcolor}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks, breaklinks, urlcolor=linkcolor, linkcolor=linkcolor}
-
-% Fonts
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-
-% CV Sections inspired by:
-% http://stefano.italians.nl/archives/26
-% Removes numbers from section headings, uses Large size, uses small caps font,
-% and adds an hrule after heading
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
 
 \begin{document}
-\pagestyle{empty}  % don't use page numbers
+\maketitle
 
-\par{\centering
-    {\Huge Sam Kaplan}
-\bigskip\par}
+\section{Work Experience}
+\cventry{Dec 2009--Feb 2011}{Compiler Engineer}{ET International, Inc.}{Newark, DE}{}{
+    \begin{itemize}
+        \item Implemented dynamic optimizers in C++ for source-to-source C compiler using LLVM and ROSE libraries.
+        \item Collaborated with researchers at Rice University and Ohio State University.
+        \item Used git for version control [something something].
+        \item Used Hudson and Buildbot for continuous integration [something something].
+        \item Wrote automated unit test suites with GNU Autotest.
+    \end{itemize}
+}
 
-\section{Personal Data}
-\begin{tabular}{rl}
-    \textsc{Address:} & 104 E. Jefferson St., Media, PA, 19063 \\
-    \textsc{Phone:}   & 484.437.2799 \\
-    \textsc{Email:}   & \href{mailto:stkaplan@gmail.com}{stkaplan@gmail.com} \\
-\end{tabular}
+%\begin{tabular}{r|p{11cm}}
+    %\textsc{Nov 2007 - Aug 2008} & Software Developer at \textsc{FMP Media Solutions}, Conshohocken, PA \\
+    %& \footnotesize{Redeveloped and relaunched digital video production company's website.} \\
+    %& \footnotesize{Created a database front-end on website to display and allow employees to enter news articles.} \\
+    %& \footnotesize{Wrote C\# modules for DotNoteNuke CMS for use on company's website and intranet.} \\
+    %& \footnotesize{Worked with a SQL Server database as backend for DotNetNuke.}
+%\end{tabular}
 
 \end{document}
