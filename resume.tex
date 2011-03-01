@@ -1,4 +1,5 @@
 % Sam's Kaplan's resume, as of Feb 24 2011
+% TODO: fix line spacing between multiple line cvlistitems
 
 \documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
@@ -9,6 +10,8 @@
 \address{104 E. Jefferson St.}{Media, PA 19063}
 \mobile{(484) 437-2799}
 \email{stkaplan@gmail.com}
+
+\newcommand{\placeholder}{\textcolor{red}{[something something]}}
 
 \nopagenumbers{}
 
@@ -30,14 +33,14 @@
 \cvlistitem{Implemented dynamic optimizers in C++ for source-to-source C compiler using LLVM and ROSE libraries.}
 \cvlistitem{Worked on a Chaitin-Briggs register allocator implemented in LLVM.}
 \cvlistitem{Collaborated with researchers at Rice University and Ohio State University.}
-\cvlistitem{Used git for version control [something something].}
-\cvlistitem{Used Hudson and Buildbot for continuous integration [something something].}
+\cvlistitem{Used git for version control \placeholder.}
+\cvlistitem{Used Hudson and Buildbot for continuous integration \placeholder.}
 \cvlistitem{Wrote automated unit test suites with GNU Autotest.}
 
 \cventry{Nov 2007--Aug 2008}{Software Developer}{FMP Media Solutions}{Conshohocken, PA}{}{}
 \cvlistitem{Redeveloped and relaunched digital video production company's website.}
 \cvlistitem{Created a database front-end on website to display and allow employees to enter news articles.}
-\cvlistitem{Wrote C\# modules for DotNoteNuke CMS for use on company's website and intranet.}
+\cvlistitem{Wrote C$\sharp$ modules for DotNoteNuke CMS for use on company's website and intranet.}
 \cvlistitem{Worked with a SQL Server database as backend for DotNetNuke.}
 
 \cventry{Summer 2007}{Research Assistant}{Robotics Institute, Carnegie Mellon University}{Pittsburgh, PA}{}{}
