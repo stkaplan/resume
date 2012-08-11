@@ -4,7 +4,8 @@
 
 \documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
-\moderncvtheme[]{classic}
+\usepackage{fullpage}
+\moderncvtheme[blue]{classic}
 
 \firstname{Sam}
 \familyname{Kaplan}
@@ -12,29 +13,45 @@
 \mobile{(484) 437-2799}
 \email{stkaplan@gmail.com}
 
-\newcommand{\placeholder}{\textcolor{red}{[something something]}}
+\newcommand{\placeholder}{\textcolor{red}{[ADD MORE INFO]}}
 
 \nopagenumbers{}
 \usepackage[none]{hyphenat}
 
+\setlength{\hintscolumnwidth}{3.5cm}
+
 \begin{document}
 \maketitle
 \section{Skills}
-% TODO: Should I list Bash?
-\cvline{Languages:}{C, C++, Java, C$\sharp$, Ruby, Python, Bash \textcolor{red}{(maybe)}}
-\cvline{Software:}{Visual Studio, Eclipse, git, Subversion, Mercurial, LLVM/clang, gcc, gdb, SQL, \LaTeX}
+\cvline{Languages:}{C, C++, Java, C$\sharp$, Ruby, Python, bash}
+\cvline{Software:}{Visual Studio, Eclipse, Vim, git, Subversion, Mercurial, LLVM/clang, gcc, gdb, SQL, \LaTeX}
 
 \section{Work Experience}
-\cventry{Dec 2009 --\\ Present}{Compiler Engineer}{ET International, Inc.}{Newark, DE}{}{}
+\cventry{Jul 2012 -- Present}{\textcolor{red}{Job Title}}{ET International, Inc.}{Newark, DE}{}{}
+\cvlistitem{Contributed to language design of SCALE extension of C.}
+\cvlistitem{Worked on translator of SCALE programs to standard C.}
+
+\cventry{Sep 2011 -- Jul 2012}{\textcolor{red}{Job Title}}{ET International, Inc.}{Newark, DE}{}{}
+\cvlistitem{Ported and optimized SWARM parallel programming framework to Intel Runnemede architecture.}
+\cvlistitem{Measured power-efficiency of simulated Runnemede architecture.}
+\cvlistitem{Implemented parallelized Cholesky decomposition and matrix multiplication algorithms for use as benchmarks.}
+\cvlistitem{Collaborated with research team at Intel.}
+
+\cventry{Feb 2011 -- Sep 2011}{Test Engineer}{ET International, Inc.}{Newark, DE}{}{}
+\cvlistitem{Wrote tests to demonstrate completion and effectiveness of Cyclops64 supercomputer.}
+\cvlistitem{Implemented requirement tests and regression tests in Python and Bash.}
+\cvlistitem{Diagnosed hardware, software, and scalability problems in supercomputer installations containing up to 3000 nodes.}
+\cvlistitem{Provided on-site customer support to government customer.}
+
+\cventry{Dec 2009 -- Feb 2011}{Compiler Engineer}{ET International, Inc.}{Newark, DE}{}{}
 \cvlistitem{Implemented dynamic optimizers in C++ for source-to-source C compiler using LLVM and ROSE libraries.}
 \cvlistitem{Worked on a Chaitin-Briggs register allocator implemented in LLVM.}
 \cvlistitem{Collaborated with researchers at Rice University and Ohio State University.}
-% TODO: Write something better for these two lines
-\cvlistitem{Used git for version control \placeholder.}
-\cvlistitem{Used Hudson and Buildbot for continuous integration \placeholder.}
+\cvlistitem{Coordinated with team of developers using git for version control.}
+\cvlistitem{Used Hudson and Buildbot for continuous integration.}
 \cvlistitem{Wrote automated unit test suites with GNU Autotest.}
 
-\cventry{Nov 2007 --\\ Aug 2008}{Software Developer}{FMP Media Solutions}{Conshohocken, PA}{}{}
+\cventry{Nov 2007 -- Aug 2008}{Software Developer}{FMP Media Solutions}{Conshohocken, PA}{}{}
 \cvlistitem{Redeveloped and relaunched digital video production company's website.}
 \cvlistitem{Created a database front-end on website to display and allow employees to enter news articles.}
 \cvlistitem{Wrote C$\sharp$ modules for DotNoteNuke CMS for use on company's website and intranet.}
